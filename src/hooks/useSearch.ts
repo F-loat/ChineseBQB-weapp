@@ -28,7 +28,7 @@ const useSearch = () => {
     setLoading(true)
 
     request({
-      url: 'https://www.v2fy.com/asset/0i/ChineseBQB/chinesebqb_v2fy.json',
+      url: 'https://v2fy.com/asset/0i/ChineseBQB/chinesebqb_v2fy.json',
     }).then(({ data }) => {
       Taro.hideLoading()
       Taro.hideNavigationBarLoading()

@@ -24,7 +24,7 @@ const useImages = (path) => {
     setLoading(true)
 
     request({
-      url: `https://www.v2fy.com/p/${path}/`,
+      url: `https://v2fy.com/p/${path}/`,
       dataType: '其他',
       responseType: 'text'
     }).then((data) => {

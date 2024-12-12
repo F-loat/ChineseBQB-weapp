@@ -45,32 +45,15 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
     "miniprogram": {
       "list": [
         {
-          "id": -1,
           "name": "pages/setting/index",
           "pathName": "pages/setting/index",
           "query": "",
           "scene": null
         },
         {
-          "id": 1,
           "name": "pages/index/index",
           "pathName": "pages/index/index",
           "query": "repository=getActivity/EmojiPackage",
@@ -78,5 +61,15 @@
         }
       ]
     }
+  },
+  "libVersion": "3.7.1",
+  "srcMiniprogramRoot": "dist/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
   }
 }
