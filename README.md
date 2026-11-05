@@ -48,6 +48,9 @@ npm run dev:h5
 
 ## 说明
 
+- 分类和搜索索引随应用打包，图片来自 [ChineseBQB](https://github.com/zhaoolee/ChineseBQB) 的固定版本。图片访问和下载需要能连接 `raw.githubusercontent.com`，微信小程序发布环境需配置对应的下载域名。
+- 更新索引时，从 GitHub Git Trees API 导出目标提交的完整递归树，再运行 `node scripts/update-sticker-catalog.cjs <commit-sha> <recursive-tree.json>`。
+
 * 本项目使用 [Taro](https://github.com/NervJS/taro) 框架开发，图片资源来自 [ChineseBQB](https://github.com/zhaoolee/ChineseBQB) 项目
 
 * 小程序图标及分享封面由方圆STU创始人[老罗巴扎嘿](https://huaban.com/syy946795671/muse_boards/)独立设计

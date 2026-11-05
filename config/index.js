@@ -44,6 +44,12 @@ const config = {
   defineConstants: {
   },
   mini: {
+    webpackChain(chain) {
+      chain.module.rule('optional-wechat-cloud')
+        .test(file => file === require.resolve('@tarojs/taro-weapp/dist/index.js'))
+        .use('optional-wechat-cloud')
+        .loader(path.resolve(__dirname, 'optional-wechat-cloud.cjs'))
+    },
     postcss: {
       pxtransform: {
         enable: true,

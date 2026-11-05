@@ -15,7 +15,7 @@ export default function SearchPage () {
 
   const filteredImages = useMemo(() => {
     if (!data.length) return []
-    if (!keyword) return Array(12).fill(null).map(() => data[random(0, data.length)])
+    if (!keyword) return Array(12).fill(null).map(() => data[random(0, data.length - 1)])
     return data.filter(item => item.name.includes(keyword))
   }, [data, keyword, randomCount])
 

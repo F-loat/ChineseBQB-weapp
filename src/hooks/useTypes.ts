@@ -1,5 +1,5 @@
 import { useState, useEffect } from '@tarojs/taro'
-import newTypes from '../data/types.json'
+import { stickerCategories } from '../data/stickers'
 
 interface Item {
   name: string;
@@ -16,7 +16,7 @@ const useTypes = () => {
     fetchTypes()
   }, [])
 
-  const fetchTypes = () => setTypes(newTypes)
+  const fetchTypes = () => setTypes(stickerCategories)
 
   return {
     loading,
